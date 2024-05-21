@@ -16,7 +16,7 @@ return new class extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
 
-            $table->string('description')->nullable();
+            $table->string('description')->nullable()->after('Quantity');
 
         });
     }
